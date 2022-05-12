@@ -1,0 +1,126 @@
+/* ==================================== responsive css ===========================================*/
+
+
+
+@media (max-width: 1199.98px) {
+
+  
+}
+
+@media (max-width: 991.98px) {
+   
+    .banner{
+        height: auto;
+    }
+    .banner h1{
+        font-size: 35px;
+    }
+    .banner h3{
+        font-size: 20px;
+    }
+    .banner h5{
+        font-size: 15px;
+    }
+    .container{
+        max-width: 95%;
+    }
+    .banner form input{
+        height: 40px;
+    }
+    .main-content .text h1{
+        font-size: 30px;
+    }
+    .main-content .text img{
+        max-width: 70px;
+    }
+    .main-content .text p{
+        font-size: 14px;
+    }
+    #img12 {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .main-content .bar {
+        height: 100%;
+        max-height: 12rem;
+    }
+    
+}
+
+@media (max-width: 767.98px) {
+
+    .banner{
+        height: auto;
+        background: url('../images/1mobile.PNG');
+        background-size: cover;
+    }
+    .banner form{
+        max-width: 100%;
+        padding-top: 20px;
+    }
+    .form-mobile {
+        background: #ff2d69;
+        padding: 40px;
+    }
+    #form334{
+        max-width: 100%;
+        float: none;
+    }
+    
+    #form334::before{
+        opacity: 1;
+    }
+    
+    
+    .main-content{
+        background: url('../images/2mobile.PNG');
+        background-size: 100% 100%;
+    }
+
+}
+
+
+
+
+@media (max-width: 580px) {
+    .header h5 {
+        margin: 24px 0;
+        font-size: 11px;
+    }
+    .form-mobile{
+        padding: 15px 0;
+    }
+    .main-content .text p{
+        font-size: 10px;
+    }
+    
+    .thankyou{
+        background: url('../images/10mobile.PNG');
+        background-size: cover;
+    }
+    .thankyou .content h1{
+        font-size: 45px;
+    }
+    .thankyou .content p{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 470px) {
+    .main-content .left-content{
+        padding: 10px;
+    }
+    .main-content .text img {
+        max-width: 50px;
+        right: 0;
+        top: 30px;
+    }
+    .main-content .bar{
+        max-height: 10rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+}

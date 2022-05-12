@@ -1,0 +1,455 @@
+/***************************************************************************************************************
+||||||||||||||||||||||||||||            MASTER STYLESHEET FOR SOLAR      ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************
+****************************************************************************************************************
+* 1. common styles
+* 2. header styles
+* 3. slider styles
+* 4. blog styles
+* 5. sidebar styles
+* 6. mailchimp styles
+* 7. client styles
+* 8. service styles
+* 9. contact styles
+* 10. about styles
+* 11. footer styles
+* 12. project styles
+* 13. team styles
+* 14. cta styles
+* 15. how-it-works styles
+* 16. testimonials styles
+* 17. inner-banner styles
+* 18. funfact styles
+* 19. faq styles
+* 20. search-popup styles
+****************************************************************************************************************
+||||||||||||||||||||||||||||            End TABLE OF CONTENT                ||||||||||||||||||||||||||||||||||||
+****************************************************************************************************************/
+/*
+* 1. common styles
+*/
+
+a:active,
+a:hover,
+a:focus,
+a:visited {
+    text-decoration: none;
+}
+
+p {
+    line-height: normal;
+}
+
+
+body,.ui-widget {
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    background: #000;
+}
+
+.container-fluid {
+    max-width: 1740px;
+    margin: 0 auto;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+    outline: none !important;
+}
+
+section {
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: SamsungSharpSansRegular;
+    src: url('../fonts/SamsungSharpSansRegular-Regular.ttf');
+}
+
+/* isofont */
+
+@font-face {
+
+    font-family: "IcoFont";
+    font-weight: normal;
+    font-style: "Regular";
+    src: url("../fonts/icofont.woff2") format("woff2"),
+        url("../fonts/icofont.woff") format("woff");
+}
+
+[class^="icofont-"],
+[class*=" icofont-"] {
+    font-family: 'IcoFont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.icofont-ui-alarm:before {
+    content: "\ec3f";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header {
+    background: #ff2d69;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    max-width: 96%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 0px 7px 15px #000;
+    padding: 5px 20px;
+    z-index: 999;
+    transition: linear .4s;
+}
+.fixed-top {
+    max-width: 100%;
+    padding: 0;
+    border-radius: 0;
+    top: 0;
+    transition: linear .4s;
+}
+.navbar{
+    padding: 0;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    background: transparent;
+}
+.navbar-brand img {
+    max-width: 120px;
+}
+.fixed-top .navbar-brand img {
+    max-width: 80px;
+}
+.nav-link {
+    color: #fff !important;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 35px;
+}
+.fixed-top .nav-link {
+    font-size: 13px;
+}
+
+
+
+.logo img {
+    max-width: 120px;
+}
+.header h5 {
+    margin: 17px 0;
+    
+}
+.header h5 a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    text-shadow: 0px 0px 5px #000;
+}
+
+
+
+
+
+
+.banner {
+    background: url('../images/1.PNG');
+    background-size: 100% 100%;
+    padding: 150px 0;
+    padding-bottom: 80px;
+    height: 100vh;
+}
+.banner .menu li {
+    margin-bottom: 25px;
+    border-bottom: 2px solid #fff;
+}
+.banner .menu li a {
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 3px;
+    display: block;
+}
+.banner h1 {
+    color: #ff2d69;
+    font-size: 47px;
+    font-weight: 500;
+    margin: 0;
+}
+.banner hr {
+    border-top: 2px dashed #fff;
+}
+.banner h3 {
+    color: #fff;
+}
+.banner h5 {
+    color: #fff;
+    margin: 15px 0;
+}
+.social-box {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 11px 20px;
+    opacity: .8;
+    overflow: hidden;
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+.social-box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: .7;
+    z-index: -2;
+}
+.social-box .social {
+    overflow: hidden;
+    display: inline-block;
+}
+.social-box .social li {
+    float: left;
+    margin: 0 10px;
+}
+.social-box .social li a{
+    display: block;
+}
+.social-box .social li a img {
+    height: 30px;
+    max-width: 41px;
+}
+.brand-logo {
+    overflow: hidden;
+    display: inline-block;
+}
+.brand-logo li {
+    float: left;
+    margin: 10px 5px;
+}
+.brand-logo li img {
+    width: 50px;
+}
+.brand-logo li:first-child img {
+    width: 75px;
+}
+.banner .right-bar {
+    overflow: hidden;
+}
+#form334 {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    padding: 15px 50px;
+    color: #fff;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 25rem;
+    float: right;
+}
+#form334:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .7;
+    z-index: -2;
+}
+#form334 .input-field {
+    margin: 20px 0;
+}
+#form334 label {
+    display: block;
+    color: #ff2d69;
+    border-bottom: 1px solid #ff2d69;
+    padding-bottom: 3px;
+}
+#form334 input {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border: none;
+    color: #000;
+}
+.submit-btn button {
+    background: #ff2d69;
+    color: #fff;
+    border: none;
+    padding: 10px 35px;
+}
+
+
+
+
+
+.main-content {
+    padding: 100px 0;
+    padding-bottom: 40px;
+    background: url('../images/2.PNG');
+    background-size: 100% 100%;
+}
+.main-content .left-content {
+    position: relative;
+    background: #000;
+    border: 2px solid #ff2d69;
+    padding: 30px 60px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px #000;
+}
+.main-content .bar {
+    float: left;
+    max-width: 32px;
+}
+.main-content .text {
+    padding-left: 54px;
+}
+.main-content .text .heading {
+    position: relative;
+    color: #fff;
+}
+.main-content .text h1 {
+    font-size: 55px;
+    font-weight: 600;
+}
+.main-content .text h1 span {
+    display: block;
+    color: #ff2d69;
+}
+.main-content .text img {
+    position: absolute;
+    top: 0;
+    right: 10%;
+    max-width: 136px;
+}
+.main-content .text p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 29px;
+    margin-bottom: 0;
+}
+
+
+
+
+
+.brand-area h2 {
+    color: #fff;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+.brand-area .image {
+    background: #fff;
+    position: relative;
+    border: 2px solid #ff2d69;
+    height: 5rem;
+    border-radius: 20px;
+}
+.brand-area .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+}
+
+
+
+
+.footer {
+    color: #fff;
+    width: 100%;
+    max-width: 32rem;
+    margin: 0 auto;
+        margin-top: 0px;
+    margin-top: 60px;
+}
+.footer h3 {
+    margin-bottom: 30px;
+}
+
+
+
+.thankyou{
+    background: url('../images/10.PNG');
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.thankyou .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: auto;
+}
+.thankyou .content h1 {
+    color: #ff2d69;
+    font-size: 70px;
+}
+.thankyou .content p {
+    color: #fff;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0;
+}
